@@ -1,0 +1,18 @@
+Compilation warnings/errors on ReadWrite.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> ReadWrite.sol
+
+
+[92m
+solc-0.8.9 is not recommended for deployment
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity[0m
+[92m
+Parameter ReadWrite.writeData(string)._a (ReadWrite.sol#13) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions[0m
+[92m
+writeData(string) should be declared external:
+	- ReadWrite.writeData(string) (ReadWrite.sol#13-17)
+readData() should be declared external:
+	- ReadWrite.readData() (ReadWrite.sol#18-21)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#public-function-that-could-be-declared-external[0m
+ReadWrite.sol analyzed (1 contracts with 78 detectors), 4 result(s) found
